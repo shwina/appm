@@ -39,7 +39,7 @@ func HMSToSeconds(s string) (int, error) {
 
 func SecondsToHMS(sec int) string {
 	// SecondsToHMS converts a duration in seconds
-    // to a string of the form H..HH:MM:SS
+	// to a string of the form H..HH:MM:SS
 	hours := sec / 3600
 	minutes := (sec - 3600*hours) / 60
 	seconds := sec - 3600*hours - 60*minutes
